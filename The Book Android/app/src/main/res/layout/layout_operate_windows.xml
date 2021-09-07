@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_operate_window"
+    android:orientation="horizontal"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+
+    >
+
+    <TextView
+        android:id="@+id/tv_note"
+        style="@style/OperateTextView"
+        android:text="NOTE" />
+
+    <TextView
+        android:id="@+id/tv_mark"
+        style="@style/OperateTextView"
+        android:text="MARK" />
+
+    <TextView
+        android:id="@+id/tv_underline"
+        style="@style/OperateTextView"
+        android:text="UNDERLINE" />
+
+</LinearLayout>

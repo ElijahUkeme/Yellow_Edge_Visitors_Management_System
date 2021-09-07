@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activity.OurFatherActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/first"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tool_our_father"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#780A45"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/caption"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="our father (english)"
+        android:textColor="#390C70"
+        android:layout_marginLeft="10dp"
+        android:textAllCaps="true"
+        android:textSize="12sp"
+        android:layout_marginTop="80dp"/>
+
+    <TextView
+        android:id="@+id/our_caption"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/caption"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="#000"
+        android:text="Our Father, who art in heaven,\nhallowed be thy name;\nthy kingdom come,\nthy will be done on earth, as it is in heaven.\nGive us this day our daily bread,\nand forgive us our trespasses,\nas we forgive those who trespass against us;\nand lead us not into temptation,\nbut deliver us from evil."
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/our_latin"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textColor="#390C70"
+        android:textSize="12sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="pater noster (latin)"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/our_caption"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/our_text"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pater noster, qui es in caelis:\nsanctificetur nomen tuum;\nadveniat regnm tuum;\nfiat voluntas tua, sicut in caelo, et in terra.\nPanem nostrum cotidianum da nobis hodie;\net dimitte nobis debita nostra,\nsicut et nos demittimus debitoribus nostril;\net ne nos inducas in tentationem;\nsed libera nos a malo"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/our_latin"
+        android:textSize="12sp"
+        android:textColor="#000"
+        android:layout_marginTop="20dp"/>
+    </RelativeLayout>
+</ScrollView>

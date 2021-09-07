@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.LambActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/first"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tool_lamb"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#780A45"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/lamb"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="lamb of god (english)"
+        android:textColor="#390C70"
+        android:layout_marginLeft="10dp"
+        android:textSize="12sp"
+        android:layout_below="@+id/deaconOrLatin"
+        android:textAllCaps="true"
+        android:layout_marginTop="70dp"/>
+
+    <TextView
+        android:id="@+id/text_lamb"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textSize="12sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lamb"
+        android:text="Lamb of God,\nyou take away the sins of the world\n        have mercy on us.\nLamb of God,\nyou take away the sins of the world,\n        have mercy on us.\nLamb of God,\nyou take away the sins of the world,\n        grant us peace."
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/latin_lamb"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="agnus dei (latin)"
+        android:layout_below="@+id/text_lamb"
+        android:textColor="#390C70"
+        android:textSize="12sp"
+        android:layout_marginLeft="10dp"
+        android:textAllCaps="true"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/latin_text"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:textColor="#000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agnus Dei, qui tollis peccata mundi:\n         miserere nobis.\nAgnus Dei, qui tollis peccata mundi:\n         miserere nobis.\nAgnus Dei, qui tollis peccata mundi:\n         dona nobis pacem"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/latin_lamb"
+        android:layout_marginTop="10dp"/>
+    </RelativeLayout>
+
+</ScrollView>

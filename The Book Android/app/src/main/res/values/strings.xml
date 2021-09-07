@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CATHOLIC HYMNAL</string>
+    <string name="textsize_dialog_lbl_fontsize">Font Size</string>
+    <string name="textsize_dialog_edtText">18</string>
+    <string name="settingResetMsg">Are you sure? All Changes made by you will be removed..</string>
+    <string name="settingResetTitleMsg">Confirm Reset operations</string>
+    <integer name="colorGridColumnWidth">110</integer>
+    <string name="menu_fontcolor">Font color</string>
+    <string name="menu_britness">Brightness</string>
+    <string name="menu_indicator">Indicator</string>
+    <string name="menu_reset">Reset</string>
+    <string name="share">Share</string>
+    <string name="unbook">Unbook</string>
+    <string name="bookmarked">Bookmarked</string>
+    <string name="rateus">Rate Us</string>
+    <string name="empty_msg">No notes found.</string>
+    <string name="note_empty_msg">Note should not be empty!</string>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <!--banner ad id-->
+    <!--  <string name="admob_bannner_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial_full_screen">ca-app-pub-3940256099942544/1033173712</string>-->
+    <string name="ad_app_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="admob_bannner_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial_full_screen">ca-app-pub-3940256099942544/1033173712</string>
+
+    <!-- my own added features-->
+    <string name="navigation_drawer_open">Open Navigation Drawer</string>
+    <string name="navigation_drawer_close">Close Navigation Drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="introduction"><u>the introductory rites</u></string>
+</resources>

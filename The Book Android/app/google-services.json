@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "332645152603",
+    "firebase_url": "https://the-book-with-mark.firebaseio.com",
+    "project_id": "the-book-with-mark",
+    "storage_bucket": "the-book-with-mark.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:332645152603:android:7cd7b7a5a9bf0272",
+        "android_client_info": {
+          "package_name": "com.book.reading"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "332645152603-n0jahof3ok4oeflcriqepfnv76chn5r0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.book.reading",
+            "certificate_hash": "8100ec026a54a2834d62a628401da0f1ff68fb0d"
+          }
+        },
+        {
+          "client_id": "332645152603-fdbjhl15924s8apqnplmcj0pvhg9irc1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_AMmB1wb5zeuZ_CxeTaNFQw7uQkOMayI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "332645152603-fdbjhl15924s8apqnplmcj0pvhg9irc1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

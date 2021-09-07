@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ConfessionActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/first"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tool_confession"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#780A45"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/caption_confession"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="i confess (english)"
+        android:textColor="#390C70"
+        android:textSize="12sp"
+        android:layout_marginLeft="10dp"
+        android:textAllCaps="true"
+        android:layout_marginTop="80dp"/>
+
+    <TextView
+        android:id="@+id/confession_text"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I confess to almighty God\nand to you, my brothers and sisters,\nthat I have greatly sinned,\nin my thoughts and in my words,\nin what I have done and in what I have failed to do,"
+        android:layout_marginLeft="10dp"
+        android:textColor="#000"
+        android:textSize="12sp"
+        android:layout_below="@+id/caption_confession"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/confession2"
+        android:textStyle="bold"
+        android:layout_below="@id/confession_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="(and striking their breast, they say:)"
+        android:textColor="#A50834"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:id="@+id/confession3"
+        android:textStyle="bold"
+        android:layout_below="@+id/confession2"
+        android:layout_width="wrap_content"
+        android:textColor="#000"
+        android:textSize="12sp"
+        android:layout_height="wrap_content"
+        android:text="Through my fault, through my fault,\nthrough my most grievous fault,\ntherefore I ask blessed Mary ever-Virgin,\nall the Angels and Saints,\nand you , my brothers and sisters,\nto pray for me to the Lord our God."
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:id="@+id/caption"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/confession3"
+        android:text="confiteor (latin)"
+        android:textColor="#390C70"
+        android:layout_marginLeft="10dp"
+        android:textSize="12sp"
+        android:textAllCaps="true"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/confession_latin"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confiteor Deo omnipotenti et vobis, fratres,\nQuia peccavi nimis\ncogitatione, verbo, opere et omissione:"
+        android:layout_marginLeft="10dp"
+        android:textColor="#000"
+        android:textSize="12sp"
+        android:layout_below="@+id/caption"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/latin2"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(et, percutiens sibi pectus, dicit:)"
+        android:textColor="#A50834"
+        android:textSize="12sp"
+        android:layout_below="@+id/confession_latin"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:id="@+id/latin3"
+        android:textStyle="bold"
+        android:layout_below="@+id/latin2"
+        android:layout_width="wrap_content"
+        android:textColor="#000"
+        android:textSize="12sp"
+        android:layout_height="wrap_content"
+        android:text="mea culpa, mea culpa, mea maxima culpa.\nIdeo precor beatam Mariam semper Virginem,\nOmnes Angelos et Sanctos,\net vos, fratres, orare, pro me\nad Dominum Deum nostrum."
+        android:layout_marginLeft="10dp" />
+    </RelativeLayout>
+
+</ScrollView>

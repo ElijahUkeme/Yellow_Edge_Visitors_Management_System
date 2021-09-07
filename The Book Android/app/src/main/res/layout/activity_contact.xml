@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ContactActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textview_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="YOUR NAME:"
+            android:textSize="16sp"
+            android:textColor="#880E4F"/>
+
+        <EditText
+            android:id="@+id/editText_sender_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview_name"
+            android:backgroundTint="#FA1313"/>
+
+        <TextView
+            android:id="@+id/textview_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TO:"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/editText_sender_email"
+            android:textColor="#880E4F"/>
+
+        <EditText
+            android:id="@+id/editText_receipient_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ukemedmet@gmail.com"
+            android:layout_below="@+id/textview_to"
+            android:inputType="none"/>
+
+        <TextView
+            android:id="@+id/textview_subject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SUBJECT:"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/editText_receipient_email"
+            android:textColor="#880E4F"/>
+
+        <EditText
+            android:id="@+id/editText_subject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview_subject"
+            android:backgroundTint="#FA1313"/>
+
+        <TextView
+            android:id="@+id/textview_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MESSAGE:"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/editText_subject"
+            android:textColor="#880E4F"/>
+        <EditText
+            android:id="@+id/editText_message"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@+id/textview_message"
+            android:backgroundTint="#FA1313"/>
+
+        <Button
+            android:id="@+id/button_send_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="send message"
+            android:layout_below="@+id/editText_message"
+            android:textColor="@color/white"
+            android:backgroundTint="#880E4F"
+            android:layout_marginTop="10dp"
+            android:layout_centerInParent="true"/>
+
+
+    </RelativeLayout>
+
+</ScrollView>

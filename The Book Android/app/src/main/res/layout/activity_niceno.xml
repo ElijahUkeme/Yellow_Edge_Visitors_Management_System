@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activity.NicenoActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/first"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tool_niceno"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#780A45"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="70dp">
+
+
+        <TextView
+            android:id="@+id/niceno_caption"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:textSize="12sp"
+            android:layout_height="wrap_content"
+            android:text="niceno: i believe in one god (english)"
+            android:textColor="#390C70"
+            android:textAllCaps="true" />
+
+        <TextView
+            android:id="@+id/niceno_english"
+            android:textStyle="bold"
+            android:layout_below="@+id/niceno_caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#000"
+            android:text="I believe in one God,\nthe Father almighty,\nmaker of heaven and earth,\nof all things visible and invisible.\nI believe in one Lord Jesus Christ,\nthe only Begotten Son of God,\nborn of the Fther before all ages.\nGod frm God, Light from Light,\ntrue God from true God,\nbegotten, not made,\nconsubstantial with the Father;\nthrough him all things were made.\nFor us men and for our salvation\nHe came down from heaven,\nand by the Holy Spirit was incarnate of the\n     Virgin Mary\nand (all bow)became man.\nFor our sake he was crucified under\n    Pontius Pilate,\nhe suffered death and was buried,\nand rose again on the third day\nin accordance with the Scriptures.\nHe ascended into heaven\nand is seated at the right hand of the Father.\nHe will come again in glory\nto judge the living and the dead\nand his kingdom will have no end.\nI believe in the Holy Spirit,the Lord,\n     the giver of life,\nwho proceeds from the Father and the Son,\nwho with the Father and the Son is\n     adored and glorified,\nwho has spoken through the prophets.\nI believe in one, holy, catholic and apostolic Church.\nI confess one Baptism for the forgiveness of sins\nand I look forward to the resurrection of the dead\nand the life of the world to come. Amen."
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/niceno_latin"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="credo (latin)"
+            android:textSize="12sp"
+            android:textColor="#390C70"
+            android:layout_below="@+id/niceno_english"
+            android:layout_marginLeft="10dp"
+            android:textAllCaps="true"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/latin_niceno"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#000"
+            android:text="Credo in unum Deum,\nPatrem omnipotentem, factorem caeli et terrae,\nvisibilium omnium et invisibilium.\nEt in unum Dominum lesum Christum,\nFilium Dei unigenitum,\net ex Patre natum ante omnia saecula.\nDeum de Deo, lumen de lumine,\nDeum verum de Deo vero,\ngenitum, non factum, consubstantialem Patri:\nper quem omnia facta sunt.\nQui propter nos homines\net propter nostram salutem\ndescendit de caelis.\nEt incarnatus est de Spiritu Santo\nex Maria Virgine, et homo factus est.\nCrucifixus etiam pro nobis sub Pontio Pilato;\npassus et sepultus est,\net resurrexit tertia die secundum Scripturas,\n et ascendit in caelum, sedet ad dxteram Patris.\nEt iterum venturus est cum gloria,\niudicare vivos et mortuos,\ncuius regni non erit finis.\nEt in Spiritum Sanctum, Dominum et vivificantem:\nqui ex Patre Filioque procedit.\nQui cum Patre et Filio simul adoratur\net conglorificatur:qui locutus est per prophetas.\nEt unam, sanctam,\ncatholicam et apostolicam Ecclesiam.\nConfiteor unum baptisma in remissionem, peccatorum.\nEt especto resurrectionem mortuorum,\net vitam venturi saeculi. Amen."
+            android:layout_below="@+id/niceno_latin"
+            android:layout_marginTop="10dp"/>
+
+    </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

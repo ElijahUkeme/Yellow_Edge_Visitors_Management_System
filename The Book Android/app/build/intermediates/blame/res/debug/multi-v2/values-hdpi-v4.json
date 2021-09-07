@@ -1,0 +1,45 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\HP\\Documents\\AndroidStudio\\Mobile Apps\\The Book Android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-hdpi-v4\\values-hdpi-v4.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\HP\\newfolder\\caches\\transforms-2\\files-2.1\\a14cdc991101fa09d2d3edad8d9a5a6f\\appcompat-1.1.0\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "6",
+                        "endColumns": "13",
+                        "endOffsets": "327"
+                    },
+                    "to": {
+                        "startLines": "6",
+                        "startColumns": "4",
+                        "startOffsets": "266",
+                        "endLines": "10",
+                        "endColumns": "13",
+                        "endOffsets": "538"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\HP\\Documents\\AndroidStudio\\Mobile Apps\\The Book Android\\app\\src\\main\\res\\values-hdpi\\dimens.xml",
+                    "from": {
+                        "startLines": "5,7,6,4",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "139,248,187,94",
+                        "endColumns": "46,59,59,43",
+                        "endOffsets": "181,303,242,133"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,102,162,222",
+                        "endColumns": "46,59,59,43",
+                        "endOffsets": "97,157,217,261"
+                    }
+                }
+            ]
+        }
+    ]
+}

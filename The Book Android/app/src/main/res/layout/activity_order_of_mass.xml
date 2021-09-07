@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_container"
+    android:orientation="vertical"
+    tools:context=".activity.OrderOfMassActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/first"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tool"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#780A45"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="70dp"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/intro_rites"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:text="the introcuctory rites"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:foregroundGravity="center"
+        android:textColor="#430627"/>
+
+    <TextView
+        android:id="@+id/liturgy_of_word"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:text="the liturgy of the word"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textAllCaps="true"
+        android:layout_below="@+id/intro_rites"
+        android:foregroundGravity="center"
+        android:textColor="#430627"/>
+
+    <TextView
+        android:id="@+id/liturgy_of_eucharist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:text="the liturgy of the eucharist"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/liturgy_of_word"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:textAllCaps="true"
+        android:foregroundGravity="center"
+        android:textColor="#430627"/>
+
+    <TextView
+        android:id="@+id/communion_rite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:text="the communion rite"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textAllCaps="true"
+        android:padding="10dp"
+        android:layout_below="@+id/liturgy_of_eucharist"
+        android:foregroundGravity="center"
+        android:textColor="#430627"/>
+
+    <TextView
+        android:id="@+id/concluding_rites"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:text="the concluding rites"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:textAllCaps="true"
+        android:layout_below="@+id/communion_rite"
+        android:foregroundGravity="center"
+        android:textColor="#430627"/>
+
+    <TextView
+        android:id="@+id/important_prayers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:text="some important prayers:"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/concluding_rites"
+        android:textSize="20sp"
+        android:textAllCaps="true"
+        android:padding="10dp"
+        android:foregroundGravity="center"
+        android:textColor="#430627"/>
+
+    <TextView
+        android:id="@+id/i_confess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:text="i confess (english/latin)"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:layout_below="@+id/important_prayers"
+        android:textAllCaps="true"
+        android:foregroundGravity="center"
+        android:textColor="#430627"/>
+
+    <TextView
+        android:id="@+id/gloria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:text="gloria (english/latin)"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:textAllCaps="true"
+        android:layout_below="@+id/i_confess"
+        android:foregroundGravity="center"
+        android:textColor="#430627"/>
+
+    <TextView
+        android:id="@+id/niceno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:text="niceno: i believe in one god"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/gloria"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:textAllCaps="true"
+        android:foregroundGravity="center"
+        android:textColor="#430627"/>
+
+    <TextView
+        android:id="@+id/apostles_creed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:text="apostle creed: i believe in god"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textAllCaps="true"
+        android:layout_below="@+id/niceno"
+        android:foregroundGravity="center"
+        android:textColor="#430627"/>
+
+    <TextView
+        android:id="@+id/holy_holy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:text="holy, holy, holy"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:layout_below="@+id/apostles_creed"
+        android:textAllCaps="true"
+        android:foregroundGravity="center"
+        android:textColor="#430627"/>
+
+    <TextView
+        android:id="@+id/our_father"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:text="our father"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/holy_holy"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:textAllCaps="true"
+        android:foregroundGravity="center"
+        android:textColor="#430627"/>
+
+    <TextView
+        android:id="@+id/lamb_of_god"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:text="lamb of god"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:layout_below="@+id/our_father"
+        android:textAllCaps="true"
+        android:foregroundGravity="center"
+        android:textColor="#430627"/>
+    </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

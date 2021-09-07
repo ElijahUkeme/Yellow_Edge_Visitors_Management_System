@@ -1,0 +1,763 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activity.LiturgyActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/first"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tool_liturgy"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#780A45"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="60dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/caption"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="first reading (English)"
+            android:textColor="#390C70"
+            android:textSize="10sp"
+            android:layout_marginLeft="10dp"
+            android:textAllCaps="true"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/heading"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To indicate the end of the reading,\nthe reader acclaims:"
+            android:textSize="10sp"
+            android:textColor="#C10A3D"
+            android:layout_below="@+id/caption"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/people"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The word of the Lord."
+            android:textColor="#000"
+            android:textSize="10sp"
+            android:layout_below="@+id/heading"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/all"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All reply:"
+            android:textSize="10sp"
+            android:textColor="#C10A3D"
+            android:layout_below="@+id/people"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:id="@+id/people_reply"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thanks be to God."
+            android:textColor="#000"
+            android:textSize="10sp"
+            android:layout_below="@+id/people"
+            android:layout_marginLeft="60dp"/>
+
+        <!--
+        first reading latin
+        -->
+
+        <TextView
+            android:id="@+id/captionLatin"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="first reading (latin)"
+            android:textColor="#390C70"
+            android:textSize="10sp"
+            android:layout_marginLeft="10dp"
+            android:textAllCaps="true"
+            android:layout_below="@+id/people_reply"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/headingLatin"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ad finem lectionis significandam,\nlector acclamat:"
+            android:textSize="10sp"
+            android:textColor="#C10A3D"
+            android:layout_below="@+id/captionLatin"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/peopleLatin"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Verbum Domini."
+            android:textColor="#000"
+            android:textSize="10sp"
+            android:layout_below="@+id/headingLatin"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/allLatin"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Omnes respondent:"
+            android:textSize="10sp"
+            android:textColor="#C10A3D"
+            android:layout_below="@+id/peopleLatin"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:id="@+id/people_replyLatin"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Deo gratias."
+            android:textColor="#000"
+            android:textSize="10sp"
+            android:layout_below="@+id/peopleLatin"
+            android:layout_marginLeft="110dp"/>
+
+        <TextView
+            android:id="@+id/psalm"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="psalm"
+            android:textColor="#390C70"
+            android:textSize="10sp"
+            android:layout_below="@+id/people_replyLatin"
+            android:layout_marginLeft="10dp"
+            android:textAllCaps="true"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/the_psalmist"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The psalmist or cantor signs or says the Psalm;\nthe people make the response."
+            android:textSize="10sp"
+            android:textColor="#C10A3D"
+            android:layout_below="@+id/psalm"
+            android:layout_marginLeft="10dp" />
+
+        <!--
+        second reading
+        -->
+
+        <TextView
+            android:id="@+id/caption2"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="second reading (English)"
+            android:textColor="#390C70"
+            android:textSize="10sp"
+            android:layout_marginLeft="10dp"
+            android:textAllCaps="true"
+            android:layout_below="@+id/the_psalmist"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/people2"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The word of the Lord."
+            android:textColor="#000"
+            android:textSize="10sp"
+            android:layout_below="@+id/caption2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/all2"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All reply:"
+            android:textSize="10sp"
+            android:textColor="#C10A3D"
+            android:layout_below="@+id/people2"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:id="@+id/people_reply2"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thanks be to God."
+            android:textColor="#000"
+            android:textSize="10sp"
+            android:layout_below="@+id/people2"
+            android:layout_marginLeft="60dp"/>
+
+        <!--
+        second reading latin
+        -->
+
+        <TextView
+            android:id="@+id/captionLatin2"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="second reading (latin)"
+            android:textColor="#390C70"
+            android:textSize="10sp"
+            android:layout_marginLeft="10dp"
+            android:textAllCaps="true"
+            android:layout_below="@+id/people_reply2"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/peopleLatin2"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Verbum Domini."
+            android:textColor="#000"
+            android:textSize="10sp"
+            android:layout_below="@+id/captionLatin2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/allLatin2"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Omnes respondent:"
+            android:textSize="10sp"
+            android:textColor="#C10A3D"
+            android:layout_below="@+id/peopleLatin2"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:id="@+id/people_replyLatin2"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Deo gratias."
+            android:textColor="#000"
+            android:textSize="10sp"
+            android:layout_below="@+id/peopleLatin2"
+            android:layout_marginLeft="110dp"/>
+
+        <!--
+        Gospel english
+        -->
+
+        <TextView
+            android:id="@+id/gospel"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="gospel (english)"
+            android:textColor="#390C70"
+            android:textSize="10sp"
+            android:layout_marginLeft="10dp"
+            android:textAllCaps="true"
+            android:layout_below="@+id/people_replyLatin2"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/gospelReading"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Response to the Gospel reading"
+            android:textSize="10sp"
+            android:textColor="#C10A3D"
+            android:layout_below="@+id/gospel"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:id="@+id/deacon_gospel"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Deacon or Priest:"
+            android:textSize="10sp"
+            android:textColor="#C10A3D"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/gospelReading"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:id="@+id/gospel_sound"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The Lord be with you"
+            android:textColor="#000"
+            android:textSize="10sp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/gospelReading"
+            android:layout_marginLeft="100dp"/>
+
+        <TextView
+            android:id="@+id/gospel_reply"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="People reply:"
+            android:textSize="10sp"
+            android:textColor="#C10A3D"
+            android:layout_below="@+id/gospel_sound"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:id="@+id/gospel_sound2"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="And with your Spirit."
+            android:textColor="#000"
+            android:textSize="10sp"
+            android:layout_below="@+id/gospel_sound"
+            android:layout_marginLeft="80dp"/>
+
+        <TextView
+            android:id="@+id/gospel_deacon"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Deacon or Priest:"
+            android:textSize="10sp"
+            android:textColor="#C10A3D"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/gospel_sound2"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:id="@+id/gospel_sound3"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A reading from the holy Gospel according to N...."
+            android:textColor="#000"
+            android:textSize="10sp"
+            android:layout_below="@+id/gospel_deacon"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/gospel_deacon4"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="People acclaim:"
+            android:textSize="10sp"
+            android:textColor="#C10A3D"
+            android:layout_below="@+id/gospel_sound3"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:id="@+id/gospel_sound5"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Glory to you, O Lord."
+            android:textColor="#000"
+            android:textSize="10sp"
+            android:layout_below="@+id/gospel_sound3"
+            android:layout_marginLeft="90dp"/>
+
+        <TextView
+            android:id="@+id/gospel_deacon6"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="At the end of the Gospel, Deacon or Priest acclaim:"
+            android:textSize="10sp"
+            android:textColor="#C10A3D"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/gospel_sound5"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:id="@+id/gospel_sound6"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The Gospel of the Lord."
+            android:textColor="#000"
+            android:textSize="10sp"
+            android:layout_below="@+id/gospel_deacon6"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/gospel_deacon5"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="People reply:"
+            android:textSize="10sp"
+            android:textColor="#C10A3D"
+            android:layout_below="@+id/gospel_sound6"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:id="@+id/gospel_sound4"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Praise to you, Lord Jesus Christ."
+            android:textColor="#000"
+            android:textSize="10sp"
+            android:layout_below="@+id/gospel_sound6"
+            android:layout_marginLeft="78dp"/>
+
+
+        <TextView
+            android:id="@+id/gospel_deacon7"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="After the Gospel, all sit.:"
+            android:textSize="10sp"
+            android:textColor="#C10A3D"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/gospel_sound4"
+            android:layout_marginLeft="10dp" />
+
+        <!--
+        gospel latin
+        -->
+
+        <TextView
+            android:id="@+id/gospelLatin"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="gospel (latin)"
+            android:textColor="#390C70"
+            android:textSize="10sp"
+            android:layout_marginLeft="10dp"
+            android:textAllCaps="true"
+            android:layout_below="@+id/gospel_deacon7"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/gospelReadingLatin"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Diaconus, vel Sacerdos:"
+            android:textSize="10sp"
+            android:textColor="#C10A3D"
+            android:layout_below="@+id/gospelLatin"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:id="@+id/gospel_soundLat"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dominus vobiscum."
+            android:textColor="#000"
+            android:textSize="10sp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/gospelLatin"
+            android:layout_marginLeft="130dp"/>
+
+        <TextView
+            android:id="@+id/gospel_replyLat"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Populus respondet:"
+            android:textSize="10sp"
+            android:textColor="#C10A3D"
+            android:layout_below="@+id/gospel_soundLat"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:id="@+id/gospel_sound2Lat"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Et cum spiritu tuo."
+            android:textColor="#000"
+            android:textSize="10sp"
+            android:layout_below="@+id/gospel_soundLat"
+            android:layout_marginLeft="108dp"/>
+
+        <TextView
+            android:id="@+id/gospel_deaconLat"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Diaconus, vel Sacerdos:"
+            android:textSize="10sp"
+            android:textColor="#C10A3D"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/gospel_sound2Lat"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:id="@+id/gospel_sound3Lat"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lectio sancti Evangelii secundum N...."
+            android:textColor="#000"
+            android:textSize="10sp"
+            android:layout_below="@+id/gospel_deaconLat"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/gospel_deacon4Lat"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Populus acclamat:"
+            android:textSize="10sp"
+            android:textColor="#C10A3D"
+            android:layout_below="@+id/gospel_sound3Lat"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:id="@+id/gospel_sound5Lat"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gloria tibi, Domine."
+            android:textColor="#000"
+            android:textSize="10sp"
+            android:layout_below="@+id/gospel_sound3Lat"
+            android:layout_marginLeft="105dp"/>
+
+        <TextView
+            android:id="@+id/gospel_deacon6Lat"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Expleto Evangelio, Diaconus, vel Sacerdos acclamat:"
+            android:textSize="10sp"
+            android:textColor="#C10A3D"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/gospel_sound5Lat"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:id="@+id/gospel_sound6Lat"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Verbum Domini."
+            android:textColor="#000"
+            android:textSize="10sp"
+            android:layout_below="@+id/gospel_deacon6Lat"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/gospel_deacon5Lat"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Populus respondet:"
+            android:textSize="10sp"
+            android:textColor="#C10A3D"
+            android:layout_below="@+id/gospel_sound6Lat"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:id="@+id/gospel_sound4Lat"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Laus tibi, Christe."
+            android:textColor="#000"
+            android:textSize="10sp"
+            android:layout_below="@+id/gospel_sound6Lat"
+            android:layout_marginLeft="112dp"/>
+
+
+
+        <TextView
+            android:id="@+id/the_homely"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="the homly"
+            android:textColor="#390C70"
+            android:textSize="10sp"
+            android:layout_marginLeft="10dp"
+            android:textAllCaps="true"
+            android:layout_below="@+id/gospel_sound4Lat"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/homly"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="After the Homily there may be a brief silence for recollection. All stand."
+            android:textSize="10sp"
+            android:textColor="#C10A3D"
+            android:layout_below="@+id/the_homely"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:id="@+id/niceno_caption"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:textSize="10sp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/homly"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="niceno: i believe in one god (english)"
+            android:textColor="#390C70"
+            android:textAllCaps="true" />
+
+        <TextView
+            android:id="@+id/niceno_english"
+            android:textStyle="bold"
+            android:layout_below="@+id/niceno_caption"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:text="I believe in one God,\nthe Father almighty,\nmaker of heaven and earth,\nof all things visible and invisible.\nI believe in one Lord Jesus Christ,\nthe only Begotten Son of God,\nborn of the Fther before all ages.\nGod frm God, Light from Light,\ntrue God from true God,\nbegotten, not made,\nconsubstantial with the Father;\nthrough him all things were made.\nFor us men and for our salvation\nHe came down from heaven,\nand by the Holy Spirit was incarnate of the\n     Virgin Mary\nand (all bow)became man.\nFor our sake he was crucified under\n    Pontius Pilate,\nhe suffered death and was buried,\nand rose again on the third day\nin accordance with the Scriptures.\nHe ascended into heaven\nand is seated at the right hand of the Father.\nHe will come again in glory\nto judge the living and the dead\nand his kingdom will have no end.\nI believe in the Holy Spirit,the Lord,\n     the giver of life,\nwho proceeds from the Father and the Son,\nwho with the Father and the Son is\n     adored and glorified,\nwho has spoken through the prophets.\nI believe in one, holy, catholic and apostolic Church.\nI confess one Baptism for the forgiveness of sins\nand I look forward to the resurrection of the dead\nand the life of the world to come. Amen."
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/niceno_latin"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="credo (latin)"
+            android:textSize="10sp"
+            android:textColor="#390C70"
+            android:layout_below="@+id/niceno_english"
+            android:layout_marginLeft="10dp"
+            android:textAllCaps="true"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/latin_niceno"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000"
+            android:textSize="10sp"
+            android:text="Credo in unum Deum,\nPatrem omnipotentem, factorem caeli et terrae,\nvisibilium omnium et invisibilium.\nEt in unum Dominum lesum Christum,\nFilium Dei unigenitum,\net ex Patre natum ante omnia saecula.\nDeum de Deo, lumen de lumine,\nDeum verum de Deo vero,\ngenitum, non factum, consubstantialem Patri:\nper quem omnia facta sunt.\nQui propter nos homines\net propter nostram salutem\ndescendit de caelis.\nEt incarnatus est de Spiritu Santo\nex Maria Virgine, et homo factus est.\nCrucifixus etiam pro nobis sub Pontio Pilato;\npassus et sepultus est,\net resurrexit tertia die secundum Scripturas,\n et ascendit in caelum, sedet ad dxteram Patris.\nEt iterum venturus est cum gloria,\niudicare vivos et mortuos,\ncuius regni non erit finis.\nEt in Spiritum Sanctum, Dominum et vivificantem:\nqui ex Patre Filioque procedit.\nQui cum Patre et Filio simul adoratur\net conglorificatur:qui locutus est per prophetas.\nEt unam, sanctam,\ncatholicam et apostolicam Ecclesiam.\nConfiteor unum baptisma in remissionem, peccatorum.\nEt especto resurrectionem mortuorum,\net vitam venturi saeculi. Amen."
+            android:layout_below="@+id/niceno_latin"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/apostle"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="apostle creed (english)"
+            android:textColor="#390C70"
+            android:layout_marginLeft="10dp"
+            android:textAllCaps="true"
+            android:textSize="10sp"
+            android:layout_below="@id/latin_niceno"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/text_apostle"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/apostle"
+            android:textColor="#000"
+            android:textSize="10sp"
+            android:text="I believe in God,\nthe Father almighty,\nCreator of heaven and earth,\nand in Jesus Christ,\nhis only Son, our Lord,\nwho was conceived by the Holy Spirit,\n born of the Virgin Mary,\nsuffered under Pontius Pilate,\nwas crucified, died and was buried;\nhe ascended into heaven,\nand is seated at the right hand of God\n     the Father almighty;\nfrom there hw will come to judge the\n     living and the dead.\nI believe in the Holy Spirit,\nthe holy catholic Church,\nthe communion of saints,\nthe forgiveness of sins,\nthe resurrection of the body,\nand life everlasting. Amen"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/apostle_latin"
+            android:textStyle="bold"
+            android:layout_below="@+id/text_apostle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="apostle creed (latin)"
+            android:textColor="#390C70"
+            android:layout_marginLeft="10dp"
+            android:textSize="10sp"
+            android:textAllCaps="true"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/text_latin1"
+            android:textStyle="bold"
+            android:layout_below="@+id/apostle_latin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="10sp"
+            android:text="Credo in Deum\nPatrem omnipotentem,\nCreatorem caeli et terrae,\net in lesum Christum,\nFilium eius unicum,\nDominum nostrum,"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/text2"
+            android:textStyle="bold"
+            android:layout_below="@+id/text_latin1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(Ad verba quae sequuntur, usque\nad Maria Virgine, omnes se inclinant),"
+            android:textColor="#BC1234"
+            android:textSize="10sp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/captions"
+            android:textStyle="bold"
+            android:layout_below="@+id/text2"
+            android:textColor="#000"
+            android:textSize="10sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="qui conceptus est de Spiritu Sancto,\nnatus ex Maria Virgine,\npassus sub Pontio Pilato,\ncrucifixus, mortuus, et sepultus,\ndescendit ad inferos,\ntertia die resurrexit a mortuis,\nascendit ad caelos,\nsedet ad dexteram Dei Patris omnipotentis,\ninde venturus est iudicare\nvivos et mortuos.\nCredo in Spiritum Sactum,\nsanctam Ecclesiam catholicam,\nsantorum communionem,\nremissionem peccatorum,\ncarnis resurrectionem,\nvitam aeternam. Amen."
+            android:layout_marginLeft="10dp"/>
+
+    </RelativeLayout>
+
+    </RelativeLayout>
+</ScrollView>

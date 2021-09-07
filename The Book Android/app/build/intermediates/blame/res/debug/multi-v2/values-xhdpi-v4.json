@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\HP\\Documents\\AndroidStudio\\Mobile Apps\\The Book Android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-xhdpi-v4\\values-xhdpi-v4.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\HP\\Documents\\AndroidStudio\\Mobile Apps\\The Book Android\\app\\src\\main\\res\\values-xhdpi\\dimens.xml",
+                    "from": {
+                        "startLines": "4,7,6,5,3",
+                        "startColumns": "4,4,3,4,4",
+                        "startOffsets": "137,306,245,185,92",
+                        "endColumns": "46,63,58,59,43",
+                        "endOffsets": "179,365,300,240,131"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,102,166,226,286",
+                        "endColumns": "46,63,59,59,43",
+                        "endOffsets": "97,161,221,281,325"
+                    }
+                }
+            ]
+        }
+    ]
+}

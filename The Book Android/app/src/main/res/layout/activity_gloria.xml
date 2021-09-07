@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activity.GloriaActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/first"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tool_gloria"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#780A45"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/caption"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="gloria (english)"
+            android:textColor="#390C70"
+            android:layout_marginLeft="10dp"
+            android:textAllCaps="true"
+            android:textSize="10sp"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/gloria_in_english"
+            android:layout_width="wrap_content"
+            android:textColor="#000"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:text=" Glory to God in the highest,\n and on earth peace to men of good will.\n We praise You,\n we bless You,\n we adore You,\n we glorify You,\n we give You thanks for Your great glory,\n
+Lord God, heavenly King,\n O God Almighty Father\n
+Lord Jesus Christ,\n Only-Begotten Son,\n Lord God, Lamb of God,\n Son of the Father, \nWho take away the sins of the world,\n have mercy on us;\n
+Who take away the sins of the world,\n hear our prayer.\n You Who sit at the right hand of the Father,\n have mercy on us.\n For You alone are the Holy One, \nyou alone the Lord, \nyou alone the Most High,\n Jesus Christ,\n with the Holy Spirit,\n in the glory of God the Father. Amen.
+
+"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/caption"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/caption_latin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="gloria (latin)"
+            android:textColor="#390C70"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textSize="10sp"
+            android:textAllCaps="true"
+            android:layout_below="@+id/gloria_in_english"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/gloria_latin"
+            android:layout_width="wrap_content"
+            android:textColor="#000"
+            android:layout_height="wrap_content"
+            android:text="Glória in excélsis Deo\net in terra pax homínibus bonæ voluntátis.\nLaudámus te,\nbenedícimus te,\nadorámus te,\nglorificámus te,\ngrátias ágitibi propter magnam glóriam tuam,\nDómine Deus, Rex cæléstis,\nDeus Pater omnípotens.\nDómine Fili unigénite, Jesu Christe,\nDómine Deus, Agnus Dei, Fílius Patris,\nqui tollis peccáta mundi, miserére nobis;\nqui tollis peccáta mundi, súscipe deprecatiónem nostram.\nQui sedes ad déxteram Patris, miserére nobis.\nQuóniam tu solus Sanctus, tu solus Dóminus, tu solus Altíssimus,\n
+Jesu Christe, cum Sancto Spíritu: in glória Dei Patris. Amen.
+"
+            android:layout_below="@+id/caption_latin"
+            android:layout_marginLeft="10dp"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"/>
+    </RelativeLayout>
+
+    </RelativeLayout>
+</ScrollView>

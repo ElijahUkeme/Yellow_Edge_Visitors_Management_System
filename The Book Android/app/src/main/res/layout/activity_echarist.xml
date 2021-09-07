@@ -1,0 +1,811 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.EcharistActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/first"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tool_echarist"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#780A45"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/caption"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="liturgy of the eucharist (English)"
+        android:textColor="#390C70"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:textAllCaps="true"
+        android:layout_marginTop="80dp"/>
+
+    <TextView
+        android:id="@+id/sub_caption"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The Priest completes personal preparatory rites, all stand."
+        android:textSize="10sp"
+        android:textColor="#C10A3D"
+        android:layout_below="@+id/caption"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/priest"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Priest:"
+        android:textSize="12sp"
+        android:textColor="#C10A3D"
+        android:layout_below="@+id/sub_caption"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/state"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pray brethren (brothers and sisters) that my sacrifice and"
+        android:textColor="#000"
+        android:textSize="10sp"
+        android:layout_below="@+id/sub_caption"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/stateCon"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="yours may be acceptable to God, the almighty Father."
+        android:textColor="#000"
+        android:textSize="10sp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/priest"/>
+
+    <TextView
+        android:id="@+id/people"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="People:"
+        android:textSize="10sp"
+        android:textColor="#C10A3D"
+        android:layout_below="@+id/stateCon"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/statepeople"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="May the Lord accept the sacrifice at your hands for praise"
+        android:textColor="#000"
+        android:textSize="10sp"
+        android:layout_below="@+id/stateCon"
+        android:layout_marginLeft="50dp"/>
+
+    <TextView
+        android:id="@+id/statepeoCon"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="and glory of his name, for our good and the good of all his holy Church."
+        android:textColor="#000"
+        android:textSize="10sp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/statepeople"/>
+
+    <!--
+    for the latin
+    -->
+
+    <TextView
+        android:id="@+id/latin"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="liturgy of the eucharist (latin)"
+        android:textColor="#390C70"
+        android:textSize="10sp"
+        android:layout_marginLeft="10dp"
+        android:textAllCaps="true"
+        android:layout_below="@+id/statepeoCon"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/priestLat"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sacerdos:"
+        android:textSize="10sp"
+        android:textColor="#C10A3D"
+        android:layout_below="@+id/latin"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/stateLat"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Orate, fratres ut meum ac vestrum sacrificium"
+        android:textColor="#000"
+        android:textSize="10sp"
+        android:layout_below="@+id/latin"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/stateConLat"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="acceptaabile fiat apud Deum Patreum omnipotentem."
+        android:textColor="#000"
+        android:textSize="10sp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/stateLat"/>
+
+    <TextView
+        android:id="@+id/peopleLat"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Populus:"
+        android:textSize="10sp"
+        android:textColor="#C10A3D"
+        android:layout_below="@+id/stateConLat"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/statepeopleLat"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Suscipiat Dominum sacrificium de manibus tuis ad"
+        android:textColor="#000"
+        android:textSize="10sp"
+        android:layout_below="@+id/stateConLat"
+        android:layout_marginLeft="55dp"/>
+
+    <TextView
+        android:id="@+id/statepeoConLat"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="laudem et gloriam nominisi sui, ad utilitatem quoque nostram\ntoliusque Ecclesiae suae sanctae."
+        android:textColor="#000"
+        android:textSize="10sp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/statepeopleLat"/>
+
+
+    <TextView
+        android:id="@+id/prayer_caption"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="the eucharistic prayer"
+        android:textColor="#390C70"
+        android:textSize="10sp"
+        android:layout_marginLeft="10dp"
+        android:textAllCaps="true"
+        android:layout_below="@+id/statepeoConLat"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/priest_pray"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Priest:"
+        android:textSize="10sp"
+        android:textColor="#C10A3D"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/prayer_caption"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/stat"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The Lord be with you."
+        android:textColor="#000"
+        android:textSize="10sp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/prayer_caption"
+        android:layout_marginLeft="45dp"/>
+
+    <TextView
+        android:id="@+id/people_pray"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="People:"
+        android:textSize="10sp"
+        android:textColor="#C10A3D"
+        android:layout_below="@+id/priest_pray"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/people_res"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="And with your Spirit"
+        android:textColor="#000"
+        android:textSize="10sp"
+        android:layout_below="@+id/priest_pray"
+        android:layout_marginLeft="50dp"/>
+
+    <!--
+    step two by the priest
+    -->
+    <TextView
+        android:id="@+id/priest_pray2"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Priest:"
+        android:textSize="10sp"
+        android:textColor="#C10A3D"
+        android:layout_below="@+id/people_res"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/stat2"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lift up your hearts."
+        android:textColor="#000"
+        android:textSize="10sp"
+        android:layout_below="@+id/people_res"
+        android:layout_marginLeft="45dp"/>
+
+    <TextView
+        android:id="@+id/people_pray2"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="People:"
+        android:textSize="10sp"
+        android:textColor="#C10A3D"
+        android:layout_below="@+id/stat2"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/people_res2"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="We lift them up to the Lord"
+        android:textColor="#000"
+        android:textSize="10sp"
+        android:layout_below="@+id/stat2"
+        android:layout_marginLeft="50dp"/>
+
+    <!--
+    step three by the priest
+    -->
+    <TextView
+        android:id="@+id/priest_pray3"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Priest:"
+        android:textSize="10sp"
+        android:textColor="#C10A3D"
+        android:layout_below="@+id/people_res2"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/stat3"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Let us give thanks to the Lord our God."
+        android:textColor="#000"
+        android:textSize="10sp"
+        android:layout_below="@+id/people_res2"
+        android:layout_marginLeft="45dp"/>
+
+    <TextView
+        android:id="@+id/people_pray3"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="People:"
+        android:textSize="10sp"
+        android:textColor="#C10A3D"
+        android:layout_below="@+id/stat3"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/people_res3"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="it is right and just"
+        android:textColor="#000"
+        android:textSize="10sp"
+        android:layout_below="@+id/stat3"
+        android:layout_marginLeft="50dp"/>
+
+    <!--
+    latin version of it
+    -->
+    <TextView
+        android:id="@+id/prayer_latin"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="precem eucharisticam"
+        android:textColor="#390C70"
+        android:textSize="10sp"
+        android:layout_marginLeft="10dp"
+        android:textAllCaps="true"
+        android:layout_below="@+id/people_res3"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/priest_prayLat"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sacerdos:"
+        android:textSize="10sp"
+        android:textColor="#C10A3D"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/prayer_latin"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/statLat"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dominus vobiscum."
+        android:textColor="#000"
+        android:textSize="10sp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/prayer_latin"
+        android:layout_marginLeft="60dp"/>
+
+    <TextView
+        android:id="@+id/people_prayLat"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Populus:"
+        android:textSize="10sp"
+        android:textColor="#C10A3D"
+        android:layout_below="@+id/statLat"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/people_resLat"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Et cum spiritu tuo."
+        android:textColor="#000"
+        android:textSize="10sp"
+        android:layout_below="@+id/statLat"
+        android:layout_marginLeft="55dp"/>
+
+    <!--
+    step two by the priest
+    -->
+    <TextView
+        android:id="@+id/priest_pray2Lat"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sacerdos:"
+        android:textSize="10sp"
+        android:textColor="#C10A3D"
+        android:layout_below="@+id/people_resLat"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/stat2Lat"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sursum corda."
+        android:textColor="#000"
+        android:textSize="10sp"
+        android:layout_below="@+id/people_resLat"
+        android:layout_marginLeft="60dp"/>
+
+    <TextView
+        android:id="@+id/people_pray2Lat"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Populus:"
+        android:textSize="10sp"
+        android:textColor="#C10A3D"
+        android:layout_below="@+id/stat2Lat"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/people_res2Lat"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Habemus ad Dominum."
+        android:textColor="#000"
+        android:textSize="10sp"
+        android:layout_below="@+id/stat2Lat"
+        android:layout_marginLeft="55dp"/>
+
+    <!--
+    step three by the priest
+    -->
+    <TextView
+        android:id="@+id/priest_pray3Lat"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sacerdos:"
+        android:textSize="10sp"
+        android:textColor="#C10A3D"
+        android:layout_below="@+id/people_res2Lat"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/stat3Lat"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gratias agamus Domino Deo nostro"
+        android:textColor="#000"
+        android:textSize="10sp"
+        android:layout_below="@+id/people_res2Lat"
+        android:layout_marginLeft="60dp"/>
+
+    <TextView
+        android:id="@+id/people_pray3Lat"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Populus:"
+        android:textSize="10sp"
+        android:textColor="#C10A3D"
+        android:layout_below="@+id/stat3Lat"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/people_res3Lat"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dignum et iustum est."
+        android:textColor="#000"
+        android:textSize="10sp"
+        android:layout_below="@+id/stat3Lat"
+        android:layout_marginLeft="55dp"/>
+
+    <TextView
+        android:id="@+id/holy"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="holy, holy, holy!"
+        android:textColor="#390C70"
+        android:layout_marginLeft="10dp"
+        android:textAllCaps="true"
+        android:textSize="10sp"
+        android:layout_below="@+id/people_res3Lat"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/people_res_holy"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="After the preface, the people sing or say:"
+        android:textSize="10sp"
+        android:textColor="#C10A3D"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/holy"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/holy_text"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/people_res_holy"
+        android:textColor="#000"
+        android:textSize="10sp"
+        android:text="Holy, Holy, Holy,\nLord God of hosts.\nHeaven and earth are full of your glory.\nHosanna in the highest.\nBlessed is he who comes in the name of the Lord.\nHosanna in the highest."
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/people_kneel"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="All kneel. The Priest continues with the Eucharistic Prayer.\nAfter the words of Consecration:"
+        android:textSize="10sp"
+        android:textColor="#C10A3D"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/holy_text"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/holy_latin"
+        android:textStyle="bold"
+        android:layout_below="@+id/people_kneel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="santus"
+        android:textColor="#390C70"
+        android:textSize="10sp"
+        android:layout_marginLeft="10dp"
+        android:textAllCaps="true"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/santus"
+        android:textStyle="bold"
+        android:layout_below="@+id/holy_latin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:text="Sanctus, Sanctus, Sanctus,\nDominus Deus Sabaoth.\nPleni sunt caeli et terra gloria tua.\nHosanna in execelsis.\nBEnedictus qui venit in nominie Demini.\nHosanna i excelsis."
+        android:layout_marginLeft="10dp"
+        android:textSize="10sp"
+        android:layout_marginTop="10dp"/>
+
+
+    <TextView
+        android:id="@+id/faith"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="the mystry of the faith"
+        android:textColor="#390C70"
+        android:layout_marginLeft="10dp"
+        android:textAllCaps="true"
+        android:textSize="10sp"
+        android:layout_below="@+id/santus"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/deacon"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1.   We proclaim your Death, O Lord, and profess your\nResurrection until you come again.Or"
+        android:textColor="#000"
+        android:textSize="10sp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/faith"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/deacon2"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2.   When we eat this bread and drink this cup, we proclaim you Death\nO Lord, until you come again. Or"
+        android:textColor="#000"
+        android:textSize="10sp"
+        android:layout_below="@+id/deacon"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/deacon3_inLat"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3.   Save us Saviour of the World, for by your Cross and\n Resurrection you have set us free."
+        android:textColor="#000"
+        android:textSize="10sp"
+        android:layout_below="@+id/deacon2"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/faith_latin"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="mysterium fidei"
+        android:textColor="#390C70"
+        android:layout_marginLeft="10dp"
+        android:textAllCaps="true"
+        android:textSize="10sp"
+        android:layout_below="@+id/deacon3_inLat"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/deaconLat"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1.   Mortem tuam annuntiamus, Domine et tuam resurrectionem\nconfitemur, donec venias. Vel:"
+        android:textColor="#000"
+        android:textSize="10sp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/faith_latin"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/deacon2Lat"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2.   Quotiescumque manducamus panem hunc et calicem bibimus\nmortem tuam annuntiamus, Domine, donec venias. Vel:"
+        android:textColor="#000"
+        android:textSize="10sp"
+        android:layout_below="@+id/deaconLat"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/deacon3_inLat3"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3.   Savator mundi, salva nos, qui per crucem et resurrectionem\ntuam liberasti nos."
+        android:textColor="#000"
+        android:textSize="10sp"
+        android:layout_below="@+id/deacon2Lat"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/conclusion"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="At the conclusion of the prayer:"
+        android:textSize="10sp"
+        android:textColor="#C10A3D"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/deacon3_inLat3"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/conclusionStatement"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Priest:"
+        android:textSize="10sp"
+        android:textColor="#C10A3D"
+        android:layout_below="@+id/conclusion"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/con"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Through him, and with him, and in him, O God, almighty"
+        android:textColor="#000"
+        android:textSize="10sp"
+        android:layout_below="@+id/conclusion"
+        android:layout_marginLeft="55dp"/>
+
+    <TextView
+        android:id="@+id/conc"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Father, in the unity of the Holy Spirit, all glory and honour is yours,\nforever and ever."
+        android:textColor="#000"
+        android:textSize="10sp"
+        android:layout_below="@+id/conclusionStatement"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/conclusionStatements"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="People:"
+        android:textSize="10sp"
+        android:textColor="#C10A3D"
+        android:layout_below="@+id/conc"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/peopleCon"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amen"
+        android:textColor="#000"
+        android:textSize="10sp"
+        android:layout_below="@+id/conc"
+        android:layout_marginLeft="60dp"/>
+
+
+    <TextView
+        android:id="@+id/conclusionStatementLat"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sacerdos:"
+        android:textSize="10sp"
+        android:textColor="#C10A3D"
+        android:layout_below="@+id/conclusionStatements"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/conLat"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Per ipsum, et cum ipso, et in ipso, est tibi Deo Patri\n"
+        android:textColor="#000"
+        android:textSize="10sp"
+        android:layout_below="@+id/conclusionStatements"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="65dp"/>
+
+    <TextView
+        android:id="@+id/conLatCon"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="omnipotenti, in unitaate Spiritus Sancti, omnis honor et gloria per\nomnia saecula saeculorum"
+        android:textColor="#000"
+        android:textSize="10sp"
+        android:layout_below="@+id/conLat"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/conclusionStatementsLatin"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Populus:"
+        android:textSize="10sp"
+        android:textColor="#C10A3D"
+        android:layout_below="@+id/conLatCon"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/peopleConLat"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amen"
+        android:textColor="#000"
+        android:textSize="10sp"
+        android:layout_below="@+id/conLatCon"
+        android:layout_marginLeft="60dp"/>
+
+    </RelativeLayout>
+
+</ScrollView>

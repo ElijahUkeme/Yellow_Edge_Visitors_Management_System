@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activity.HolyActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/first"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tool_holy"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#780A45"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/holy"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="holy, holy, holy! (english)"
+        android:textColor="#390C70"
+        android:layout_marginLeft="10dp"
+        android:textAllCaps="true"
+        android:textSize="12sp"
+        android:layout_marginTop="80dp"/>
+
+    <TextView
+        android:id="@+id/holy_text"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/holy"
+        android:textColor="#000"
+        android:textSize="12sp"
+        android:text="Holy, Holy, Holy,\nLord God of hosts.\nHeaven and earth are full of your glory.\nHosanna in the highest.\nBlessed is he who comes in the name of the Lord.\nHosanna in the highest."
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/holy_latin"
+        android:textStyle="bold"
+        android:layout_below="@+id/holy_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sanctus, sanctus, sanctus (latin)"
+        android:textColor="#390C70"
+        android:textSize="12sp"
+        android:layout_marginLeft="10dp"
+        android:textAllCaps="true"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/caption"
+        android:textStyle="bold"
+        android:layout_below="@+id/holy_latin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sanctus, Sanctus, Sanctus,\nDominus Deus Sabaoth.\nPleni sunt caeli et terra gloria tua.\nHosanna in execelsis.\nBEnedictus qui venit in nominie Demini.\nHosanna i excelsis."
+        android:layout_marginLeft="10dp"
+        android:textSize="12sp"
+        android:textColor="#000"
+        android:layout_marginTop="10dp"/>
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activity.ApostleActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/first"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tool_apostle"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#780A45"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/apostle"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="apostle creed (english)"
+        android:textColor="#390C70"
+        android:layout_marginLeft="10dp"
+        android:textAllCaps="true"
+        android:layout_marginTop="70dp"/>
+
+    <TextView
+        android:id="@+id/text_apostle"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:textColor="#000"
+        android:textSize="12sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/apostle"
+        android:text="I believe in God,\nthe Father almighty,\nCreator of heaven and earth,\nand in Jesus Christ,\nhis only Son, our Lord,\nwho was conceived by the Holy Spirit,\n born of the Virgin Mary,\nsuffered under Pontius Pilate,\nwas crucified, died and was buried;\nhe ascended into heaven,\nand is seated at the right hand of God\n     the Father almighty;\nfrom there hw will come to judge the\n     living and the dead.\nI believe in the Holy Spirit,\nthe holy catholic Church,\nthe communion of saints,\nthe forgiveness of sins,\nthe resurrection of the body,\nand life everlasting. Amen"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/apostle_latin"
+        android:textStyle="bold"
+        android:layout_below="@+id/text_apostle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="apostle creed (latin)"
+        android:textColor="#390C70"
+        android:layout_marginLeft="10dp"
+        android:textAllCaps="true"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/text_latin1"
+        android:textStyle="bold"
+        android:layout_below="@+id/apostle_latin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textSize="12sp"
+        android:text="Credo in Deum\nPatrem omnipotentem,\nCreatorem caeli et terrae,\net in lesum Christum,\nFilium eius unicum,\nDominum nostrum,"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/text2"
+        android:textStyle="bold"
+        android:layout_below="@+id/text_latin1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="(Ad verba quae sequuntur, usque\nad Maria Virgine, omnes se inclinant),"
+        android:textColor="#BC1234"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/caption"
+        android:textStyle="bold"
+        android:layout_below="@+id/text2"
+        android:layout_width="wrap_content"
+        android:textColor="#000"
+        android:textSize="12sp"
+        android:layout_height="wrap_content"
+        android:text="qui conceptus est de Spiritu Sancto,\nnatus ex Maria Virgine,\npassus sub Pontio Pilato,\ncrucifixus, mortuus, et sepultus,\ndescendit ad inferos,\ntertia die resurrexit a mortuis,\nascendit ad caelos,\nsedet ad dexteram Dei Patris omnipotentis,\ninde venturus est iudicare\nvivos et mortuos.\nCredo in Spiritum Sactum,\nsanctam Ecclesiam catholicam,\nsantorum communionem,\nremissionem peccatorum,\ncarnis resurrectionem,\nvitam aeternam. Amen."
+        android:layout_marginLeft="10dp"/>
+
+    </RelativeLayout>
+
+</ScrollView>

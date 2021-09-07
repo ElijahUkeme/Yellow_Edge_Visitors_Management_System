@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">332645152603-fdbjhl15924s8apqnplmcj0pvhg9irc1.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://the-book-with-mark.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">332645152603</string>
+    <string name="google_api_key" translatable="false">AIzaSyB_AMmB1wb5zeuZ_CxeTaNFQw7uQkOMayI</string>
+    <string name="google_app_id" translatable="false">1:332645152603:android:7cd7b7a5a9bf0272</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyB_AMmB1wb5zeuZ_CxeTaNFQw7uQkOMayI</string>
+    <string name="google_storage_bucket" translatable="false">the-book-with-mark.appspot.com</string>
+    <string name="project_id" translatable="false">the-book-with-mark</string>
+</resources>
